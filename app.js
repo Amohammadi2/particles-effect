@@ -76,7 +76,7 @@ function playParticles() {
         b = Math.random() * 255;
     for (const otherParticle of particles) {
       if (particle !== otherParticle) {
-        // if the number of iterations is divisible by 10, regenerate a random value for r,g,b
+        // if the number of iterations is divisible by 1000, regenerate a random value for r,g,b
         if (iterations % 1000 === 0) {
           r = Math.random() * 255;
           g = Math.random() * 255;
@@ -84,6 +84,7 @@ function playParticles() {
 
           iterations = 0;
         }
+        // calculate the distance between the two particles
         const distance = Math.sqrt(
           Math.pow(particle.x - otherParticle.x, 2) +
           Math.pow(particle.y - otherParticle.y, 2)
