@@ -40,7 +40,7 @@ class Particle {
 
 
 const particles = [];
-const numberOfParticles = 40;
+const numberOfParticles = 70;
 const speed = 3.5;
 
 window.addEventListener('load', () => {
